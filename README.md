@@ -34,8 +34,8 @@ public class Book {
 
 ## Mark entity with @Component annotation
 
-```java
-@Component
+```diff
++ @Component
 public class Book {
     private final String title;
 
@@ -59,9 +59,9 @@ public class ApplicationConfiguration {
 
 ## Configure component scan in configuration class
 
-```java
+```diff
 @Configuration
-@ComponentScan(basePackages = "org.example")
++ @ComponentScan(basePackages = "org.example")
 public class ApplicationConfiguration {
 }
 ```
