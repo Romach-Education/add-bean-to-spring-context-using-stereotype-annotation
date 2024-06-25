@@ -1,4 +1,4 @@
-# Add bean to Spring context using @bean annotation
+# Add bean to Spring context using stereotype annotation
 
 > This project is based on chapter **2.2.2. Using stereotype annotations to add beans to the Spring context** from book **Spring Starts here (2021)** by Laurentiu Spilca.
 
