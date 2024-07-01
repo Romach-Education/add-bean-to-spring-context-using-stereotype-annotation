@@ -128,14 +128,15 @@ public class ApplicationTests {
 public class BookTests {
 
     @Autowired
-    private ApplicationContext context;
+    private Book book;
 
     @Test
     @DisplayName("Fetch the book bean from the context")
     public void fetchBookBean() {
-        Book book = context.getBean("book", Book.class);
+        String actualTitle = book.getTitle();
+        String expectedTitle = "One Hundred Years of Solitude";
 
-        assertEquals(book.getTitle(), "One Hundred Years of Solitude");
+        assertEquals(actualTitle, expectedTitle);
     }
 }
 ```
